@@ -12,7 +12,7 @@ Windows configuration GUI, UART communication protocol notes, user guide and dat
 
 | Item | Where | Status |
 |---|---|---|
-| Configuration GUI for Windows (`RadarGUI.exe`) | [Releases](https://github.com/Kymopsis/radar-level-sensor-gui/releases) | Coming with the first release |
+| Configuration GUI for Windows (`RadarGUI.exe`) | [Releases](https://github.com/Kymopsis/radar-level-sensor-gui/releases/latest) | v1.0.0 available |
 | UART communication protocol | [docs/protocol.md](docs/protocol.md) | In preparation |
 | User guide: wiring, first measurement, settings | [docs/user-guide.md](docs/user-guide.md) | Draft |
 | Datasheets (PDF) | [docs/datasheets/](docs/datasheets/) | Available |
@@ -36,7 +36,8 @@ mounting, target, vessel and scene.
 1. Connect the radar board's UART0 to the included USB-to-TTL adapter with Dupont wires, adapter set to
    3.3 V logic (see the [user guide](docs/user-guide.md)).
 2. Download `RadarGUI.exe` from [Releases](https://github.com/Kymopsis/radar-level-sensor-gui/releases)
-   and check its SHA-256 against the release notes.
+   and check its SHA-256 against the release notes (v1.0.0:
+   `633fe765002f0d22892d71d6d2a64717e34a456c82952c2b9887372b261ed914`).
 3. Start the GUI, pick the adapter's COM port at 115200 baud and read the distance.
 
 Windows may show a SmartScreen warning because the GUI is not code-signed yet. Choose
