@@ -1,7 +1,7 @@
 # Kymopsis 80 GHz Radar Level Sensor: GUI, protocol and user guide
 
 Windows configuration GUI, UART communication protocol notes, user guide and datasheets for the
-[Kymopsis 80 GHz Radar Level Sensor Development Kit](https://kymopsis.com/product/77ghz-level-radar-development-kit/?utm_source=github&utm_medium=readme&utm_campaign=radar-level-sensor-gui)
+[Kymopsis 80 GHz Radar Level Sensor Development Kit](https://kymopsis.com/product/80-ghz-radar-level-sensor-development-kit/?utm_source=github&utm_medium=readme&utm_campaign=radar-level-sensor-gui)
 (76–81 GHz FMCW, 20 m and 60 m versions).
 
 | 20 m kit: radar board + lens radome | 60 m kit: radar board + horn antenna + PTFE lens |
@@ -24,12 +24,13 @@ Windows configuration GUI, UART communication protocol notes, user guide and dat
 | Frequency | 76–81 GHz FMCW | 76–81 GHz FMCW |
 | Antenna | PCB patch, 9 dBi, in a lens radome | Waveguide horn with PTFE lens |
 | Range | 15 m typical, 20 m standard, up to 30 m with the lens radome | Up to 60 m |
-| Accuracy (stated) | ±1 mm | ±4 mm at 20 m, ±8 mm at 60 m |
+| Accuracy (measured) | ±2 mm | ±4 mm at any distance |
 | Blind zone | 6 cm | 6 cm |
 | Interface | UART0, 115200 baud | UART0, 115200 baud |
 
-Figures are module maker datasheet values, not a Kymopsis lab report. Range and accuracy depend on
-mounting, target, vessel and scene.
+Accuracy values are Kymopsis bench measurements of the two kits. The 60 m version holds ±4 mm at any
+distance because its long-range waveform uses a narrower sweep bandwidth. Other figures are module maker
+datasheet values. Range and accuracy depend on mounting, target, vessel and scene.
 
 ## Quick start
 
